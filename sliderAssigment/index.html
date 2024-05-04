@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Card Slider JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main-section">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="ulContend">
+            <li class="card">
+                <div class="img"><img src="https://i.pinimg.com/736x/f3/98/90/f398907318e25583785c470bbf2728f6.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>Roman Reigns</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://www.sescoops.com/.image/t_share/MjA1NTA2NjcyOTQ3MzczNjA2/john-cena-wrestlemania-40.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>john cena</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCnV_ma-YaMC-bn-RrQ7LqwE8aUSn-iOZPvykvOPQGoQ&s"
+                        alt="img" draggable="false"></div>
+                <h2>Brock Lesnar</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://media.bleacherreport.com/image/upload/x_228,y_102,w_1511,h_1006,c_crop/c_fill,g_faces,w_1600,h_1600,q_95/v1680973309/azqvasdxv4zm99zrvpix.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>Randy Orton</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://external-preview.redd.it/cQKhbZb9VuSqI4gYV1yu7D78p0vQQDjwlbVUvE3fous.png?width=640&crop=smart&auto=webp&s=e19418ea7a0f8b725c8beee34f0143665882a1c2"
+                        alt="img" draggable="false"></div>
+                <h2>Dean Ambrose</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://www.wwe.com/f/styles/gallery_img_l/public/all/2016/12/002_sGLDBRG_04282003_0019--0a7c6d410ac56f4d2274383da0bf1a81.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>goldberg</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://i.pinimg.com/736x/f3/98/90/f398907318e25583785c470bbf2728f6.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>Roman Reigns</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCnV_ma-YaMC-bn-RrQ7LqwE8aUSn-iOZPvykvOPQGoQ&s"
+                        alt="img" draggable="false"></div>
+                <h2>Brock Lesnar</h2>
+            </li>
+            <li class="card">
+                <div class="img"><img
+                        src="https://media.bleacherreport.com/image/upload/x_228,y_102,w_1511,h_1006,c_crop/c_fill,g_faces,w_1600,h_1600,q_95/v1680973309/azqvasdxv4zm99zrvpix.jpg"
+                        alt="img" draggable="false"></div>
+                <h2>Randy Orton</h2>
+            </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let leftArrow = document.getElementById('left');
+            let rightArrow = document.getElementById('right');
+            let ulContend = document.querySelector('.ulContend');
+
+
+            rightArrow.addEventListener('click', function () {
+                ulContend.scrollBy({
+                    left: 250,
+                });
+            });
+
+
+            leftArrow.addEventListener('click', function () {
+                ulContend.scrollBy({
+                    left: -250,
+                });
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
